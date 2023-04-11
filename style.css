@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 15%; /* IE10 */
+  flex: 15%;
+  background-color: #fff;
+  padding: 30px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 85%; /* IE10 */
+  flex: 85%;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.categorybox {
+  background-color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  margin: 5px 3px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.paddedbox:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+div.reviewbox {
+  padding: 10px;
+  display: inline-block;
+  margin: 10px 10px;
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+div.reviewboxbig {
+  padding: 10px;
+  display: inline-block;
+  margin: 10px 10px;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  float: left;
+}
+
+
+div.category {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 1.1em;
+  border: 1px;
+  border-style: solid;
+  border-color: #000;
+  border-radius: 0px;
+  width: ;
+  padding: 5px;
+  z-index: 1;
+}
+
+
+div.categoryinner {
+  font-size: 0.8em;
+  border: 1px;
+  border-style: solid;
+  border-color: #000;
+  border-radius: 0px;
+  width: ;
+  padding: 5px 6px;
+  margin-left: auto; 
+  margin-right: 10px;
+ 
+}
+
+
+
+
+div.music {
+  background: #FFCDD2;
+}
+div.music:hover {
+  background: yellow;
+}
+div.games {
+  background: #E1BEE7;
+}
+div.games:hover {
+  background: yellow;
+}
+div.movies {
+  background: #C5CAE9;
+}
+div.movies:hover {
+  background: yellow;
+}
+div.miscellaneous {
+  background: #B3E5FC;
+}
+div.miscellaneous:hover {
+  background: yellow;
+}
+div.food {
+  background: #C8E6C9;
+}
+div.food:hover {
+  background: yellow;
+}
+div.events {
+  background: #F0F4C3;
+}
+div.events:hover {
+  background: yellow;
+}
+div.television {
+  background: #FFECB3;
+}
+div.television:hover {
+  background: yellow;
+}
+div.products {
+  background: #FFE0B2;
+}
+div.products:hover {
+  background: yellow;
+}
+div.all {
+  background: #D7CCC8;
+}
+div.all:hover {
+  background: yellow;
+}
+
+div.score {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  font-size: 1.2em;
+  border: 1px;
+  border-style: solid;
+  border-color: #000;
+  border-radius: 0px;
+  background: #fff;
+  padding: 5px;
+
+}
+
+div.title {
+  position: absolute;
+  bottom: 5px;
+  right: -15px;
+  font-size: 1.1em;
+  max-width: 220px;
+  border: 1px;
+  border-style: solid;
+  border-color: #000;
+  border-radius: 0px;
+  background: #fff;
+  opacity: 1.0;
+  padding: 5px;
+
+}
+
+img.boxed {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+img.boxedbig {
+  width: 250px;
+  height: 260px;
+  object-fit: cover;
+}
+
+
+
+.showme {
+  display: none;
+  position: relative;
+  opacity: 0.92;
+}
+
+.reviewbox:hover .showme {
+display:block;
+border:1px solid #000;
+background: #fff;
+position:absolute;
+top:0px;
+left:0px;
+font-size:20px;
+width: 266px;
+height: 260px;
+padding: 10px;
+text-align: justify;
+overflow: auto;
+font-size: 1.1em;
+}
+
+.reviewboxbig:hover .showme {
+display:block;
+border:1px solid #000;
+background: #fff;
+position:absolute;
+top:0px;
+left:0px;
+font-size:20px;
+width: 620px;
+height: 630px;
+padding: 10px;
+text-align: justify;
+overflow: auto;
+font-size: 1.2em;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999; 
+}
+
+a {
+  box-shadow: inset 0 0 0 0 #000;
+  color: #000;
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #000;;
+}
+
+/* Presentational styles */
+a {
+  color: #000;
+  text-decoration: none;
+}
